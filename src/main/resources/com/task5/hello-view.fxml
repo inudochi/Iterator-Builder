@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.control.TextField?>
+
+<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="com.task5.HelloController">
+    <padding>
+        <Insets bottom="20" left="20" right="20" top="20"/>
+    </padding>
+    <Label text="Пример индикатора"/>
+    <TextField fx:id="startField" promptText="Начало диапазона"/>
+    <TextField fx:id="stopField" promptText="Конец диапазона"/>
+    <TextField fx:id="measureField" promptText="Значение измерения"/>
+
+    <Pane fx:id="indicatorPane" prefHeight="100" prefWidth="200"/>
+    <Button text="Создать индикатор" onAction="#createIndicator"/>
+</VBox>
